@@ -4,41 +4,52 @@ $pergunta2 = $_POST['pergunta2'];
 $pergunta3 = $_POST['pergunta3'];
 $pergunta4 = $_POST['pergunta4'];
 $pergunta5 = $_POST['pergunta5'];
+$resposta = '';
 
-if($pergunta1 == 'Sim' && $pergunta2 == 'Sim' && $pergunta3 == 'Sim' && $pergunta4 == 'Não' && $pergunta5 == 'Não'){
+($pergunta1) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
+
+($pergunta2) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
+
+($pergunta3) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
+
+($pergunta4) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
+
+($pergunta5) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
+
+if(bindec($resposta) == 28){
     echo '<p>Seu animal é um Leão!</p>';
 
-}elseif($pergunta1 == 'Sim' && $pergunta2 == 'Sim' && $pergunta3 == 'Não' && $pergunta4 == 'Sim' && $pergunta5 == 'Não'){
+}elseif(bindec($resposta) == 26){
     echo '<p>Seu animal é um Cavalo!</p>';
 
-}elseif($pergunta1 == 'Sim' && $pergunta2 == 'Não' && $pergunta3 == 'Sim' && $pergunta4 == 'Sim' && $pergunta5 == 'Não'){
+}elseif(bindec($resposta) == 22){
     echo '<p>Seu animal é um Homem!</p>';
 
-}elseif($pergunta1 == 'Sim' && $pergunta2 == 'Não' && $pergunta3 == 'Não' && $pergunta4 == 'Sim' && $pergunta5 == 'Não'){
+}elseif(bindec($resposta) == 18){
     echo '<p>Seu animal é um Macaco!</p>';
 
-}elseif($pergunta1 == 'Sim' && $pergunta2 == 'Não' && $pergunta3 == 'Sim' && $pergunta4 == 'Sim' && $pergunta5 == 'Sim'){
+}elseif(bindec($resposta) == 23){
     echo '<p>Seu animal é um Morcego!</p>';
 
-}elseif($pergunta1 == 'Sim' && $pergunta2 == 'Não' && $pergunta3 == 'Sim' && $pergunta4 == 'Não' && $pergunta5 == 'Não'){
+}elseif(bindec($resposta) == 20){
     echo '<p>Seu animal é um Baleia!</p>';
 
-}elseif($pergunta1 == 'Não' && $pergunta2 == 'Não' && $pergunta3 == 'Sim' && $pergunta4 == 'Sim' && $pergunta5 == 'Não'){
+}elseif(bindec($resposta) == 6){
     echo '<p>Seu animal é um Avestruz!</p>';
 
-}elseif($pergunta1 == 'Não' && $pergunta2 == 'Não' && $pergunta3 == 'Sim' && $pergunta4 == 'Não' && $pergunta5 == 'Não'){
+}elseif(bindec($resposta) == 4){
     echo '<p>Seu animal é um Pinguim!</p>';
 
-}elseif($pergunta1 == 'Não' && $pergunta2 == 'Não' && $pergunta3 == 'Sim' && $pergunta4 == 'Sim' && $pergunta5 == 'Sim'){
+}elseif(bindec($resposta) == 7){
     echo '<p>Seu animal é um Pato!</p>';
 
-}elseif($pergunta1 == 'Não' && $pergunta2 == 'Não' && $pergunta3 == 'Sim' && $pergunta4 == 'Não' && $pergunta5 == 'Sim'){
+}elseif(bindec($resposta) == 5){
     echo '<p>Seu animal é um Águia!</p>';
 
-}elseif($pergunta1 == 'Não' && $pergunta2 == 'Sim' && $pergunta3 == 'Sim' && $pergunta4 == 'Sim' && $pergunta5 == 'Não'){
+}elseif(bindec($resposta) == 14){
     echo '<p>Seu animal é um Tartaruga!</p>';
 
-}elseif($pergunta1 == 'Não' && $pergunta2 == 'Sim' && $pergunta3 == 'Sim' && $pergunta4 == 'Não' && $pergunta5 == 'Não'){
+}elseif(bindec($resposta) == 12){
     echo '<p>Seu animal é um Crocodilo!</p>';
 
 }else{
