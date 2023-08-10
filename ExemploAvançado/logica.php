@@ -55,6 +55,7 @@ if(bindec($resposta) == 28){
 }else{
     echo '<p>Seu animal não está na Lista!</p>';
 }
+echo '<script>console.log("Teste")</script>';
 ?>
 
 <a href="./index.html">Voltar</a>
