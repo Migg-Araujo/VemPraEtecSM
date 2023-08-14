@@ -4,12 +4,12 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Cherry Bomb One', cursive;
-    /* background-color: #f5f5f5;
+    background-color: #f5f5f5;
     background-image: url("./assets/img/bkg.png");
     background-repeat: no-repeat;
-    background-size: 100%; */
+    background-size: 100%;
     text-align: center;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .main {
@@ -28,11 +28,13 @@ h1 {
 }
 
 p {
-    font-size: 16px;
-    padding: 5px;
+    font-size: 2rem;
+    padding: 5px; 
 }
 
 form {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     margin: 0 auto;
     /* margin-top: 5rem; */
     display: none;
@@ -41,14 +43,12 @@ form {
     width: 100%;
     padding: 40px;
     text-align: center;
-    column-count: 2;
 }
 
-
-/* input,
+input,
 textarea {
     width: 50;
-} */
+}
 
 a {
     color: black;
@@ -170,6 +170,8 @@ button {
 
 i {
     margin-right: 10px;
+    font-size: 1rem;
+    color: white;
 }
 
 button:hover {
@@ -180,3 +182,80 @@ button:hover {
 .texto {
     color: white;
 }
+
+/* Genel stil */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin: 10px;
+  }
+  
+  /* Giriş stil */
+  .toggle-switch .toggle-input {
+    display: none;
+  }
+  
+  /* Anahtarın stilinin etrafındaki etiketin stil */
+  .toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background-color: #2196F3;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Anahtarın yuvarlak kısmının stil */
+  .toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  /* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+  .toggle-switch .toggle-input:checked + .toggle-label {
+    background-color: #4CAF50;
+  }
+  
+  .toggle-switch .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+  }
+  
+  /* Light tema */
+  .toggle-switch.light .toggle-label {
+    background-color: #BEBEBE;
+  }
+  
+  .toggle-switch.light .toggle-input:checked + .toggle-label {
+    background-color: #9B9B9B;
+  }
+  
+  .toggle-switch.light .toggle-input:checked + .toggle-label::before {
+    transform: translateX(6px);
+  }
+  
+  /* Dark tema */
+  .toggle-switch.dark .toggle-label {
+    background-color: #4B4B4B;
+  }
+  
+  .toggle-switch.dark .toggle-input:checked + .toggle-label {
+    background-color: #717171;
+  }
+  
+  .toggle-switch.dark .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+  }
+  
