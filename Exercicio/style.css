@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Montserrat:wght@100&family=Poppins:wght@100;300&display=swap');
+ :root body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cherry Bomb One', cursive;
+    /* background-color: #f5f5f5;
+    background-image: url("./assets/img/bkg.png");
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    text-align: center;
+    overflow: hidden;
+}
+
+.main {
+    background-color: #0b0606;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    color: #0056b3;
+    /* color: #333; */
+}
+
+p {
+    font-size: 2rem;
+    padding: 5px; 
+}
+
+form {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    /* margin-top: 5rem; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+input,
+textarea {
+    width: 50;
+}
+
+.question{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+a {
+    color: black;
+}
+
+input[type="submit"] {
+    margin: 0 auto;
+    background-color: #0056b3 !important;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    /* padding: 10px 40px; */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+img {
+    width: 7rem;
+    margin: 0 auto;
+
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    width: 85%;
+}
+
+select {
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    width: 20%;
+    transition: border-color 0.3s ease;
+    font-size: 1rem;
+}
+
+select:hover,
+select:focus {
+    border-color: #007bff;
+}
+
+
+/* Estilo para as opções */
+
+select option {
+    background: white;
+    color: #333;
+    text-align: center;
+}
+
+select option:hover {
+    background: #007bff;
+    color: white;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
+
+button {
+    font-family: 'Poppins', sans-serif !important;
+    margin: 4rem;
+    background-color: #0056b3 !important;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.btn{
+  padding: 1rem 2rem 1rem 2rem;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1rem;
+}
+
+i {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.texto {
+    color: white;
+}
+
+/* Genel stil */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    /* margin: 10px; */
+  }
+  
+  /* Giriş stil */
+  .toggle-switch .toggle-input {
+    display: none;
+  }
+  
+  /* Anahtarın stilinin etrafındaki etiketin stil */
+  .toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background-color: #2196F3;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Anahtarın yuvarlak kısmının stil */
+  .toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  /* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+  .toggle-switch .toggle-input:checked + .toggle-label {
+    background-color: #4CAF50;
+  }
+  
+  .toggle-switch .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+  }
+  
+  /* Light tema */
+  .toggle-switch.light .toggle-label {
+    background-color: #BEBEBE;
+  }
+  
+  .toggle-switch.light .toggle-input:checked + .toggle-label {
+    background-color: #9B9B9B;
+  }
+  
+  .toggle-switch.light .toggle-input:checked + .toggle-label::before {
+    transform: translateX(6px);
+  }
+  
+  /* Dark tema */
+  .toggle-switch.dark .toggle-label {
+    background-color: #4B4B4B;
+  }
+  
+  .toggle-switch.dark .toggle-input:checked + .toggle-label {
+    background-color: #717171;
+  }
+  
+  .toggle-switch.dark .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+  }
+
+  .card {
+    margin: 0 auto;
+    /* padding: 5px; */
+    margin: 10px;
+    width: 100%;
+    height: 10rem;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    border-radius: 5px;
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 1px 4px 0 rgba(37, 38, 47, 0.342);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    /* padding: 5px; */
+  }
+  
+  .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+  }
+  
+  .back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #151515;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(180deg);
+  }
+  
+  .front {
+    transform: rotateY(180deg);
+    color: white;
+    
+  }
+  
+  .front .front-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 11px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title p {
+    width: 50%;
+  }
+  
+  .card-footer {
+    color: #ffffff88;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+  
+  .front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  #bottom {
+    background-color: #ff8866;
+    left: 50px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    animation-delay: -800ms;
+  }
+  
+  #right {
+    background-color: #ff2233;
+    left: 160px;
+    top: -80px;
+    width: 30px;
+    height: 30px;
+    animation-delay: -1800ms;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }

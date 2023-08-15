@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Gloria+Hallelujah&family=Poppins:wght@100;300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.quiz {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+img {
+    width: 15rem;
+    margin-bottom: 2.5rem;
+}
+
+button {
+    display: inline-block;
+    padding: 1rem;
+    background-color: rgba(191, 130, 86, 1);
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #7c8891;
+    transform: scale(1.1);
+}
+
+
+p {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    margin: 0 auto;
+    /* background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 1px 4px 0 rgba(37, 38, 47, 0.342);
+    backdrop-filter: blur(7px); */
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}
+
+.animalBotao {
+    text-align: center;
+}
+
+.btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.btn i {
+    margin-right: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
