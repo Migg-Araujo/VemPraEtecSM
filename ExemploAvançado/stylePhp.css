@@ -21,19 +21,20 @@ body {
     width: 100%;
     max-width: 800px;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
     padding: 30px;
     box-sizing: border-box;
     margin-top: 1rem;
 }
 
 img {
-    width: 7rem;
+    width: 15rem;
+    margin-bottom: 2.5rem;
 }
 
 button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1rem;
     background-color: rgba(191, 130, 86, 1);
     color: white;
     font-size: 12px;
@@ -76,8 +77,8 @@ p {
     border: none;
     border-radius: 5px;
     color: white;
-    padding: 10px 20px;
-    font-size: 12px;
+    padding: 1.5rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: background-color 0.1s ease, transform 0.1s ease;
 }
