@@ -4,22 +4,17 @@
 <div class="quiz">
 <?php
 
-$pergunta1 = $_POST['pergunta1'];
-$pergunta2 = $_POST['pergunta2'];
-$pergunta3 = $_POST['pergunta3'];
-$pergunta4 = $_POST['pergunta4'];
-$pergunta5 = $_POST['pergunta5'];
 $resposta = '';
 
-($pergunta1) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
+(isset($_POST['pergunta1'])) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
 
-($pergunta2) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
+(isset($_POST['pergunta2'])) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
 
-($pergunta3) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
+(isset($_POST['pergunta3'])) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
 
-($pergunta4) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
+(isset($_POST['pergunta4'])) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
 
-($pergunta5) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
+(isset($_POST['pergunta5'])) ? $resposta = $resposta . '1' : $resposta = $resposta . '0';
 
     //LEAO  
 if (bindec($resposta) == 28) {
@@ -32,7 +27,7 @@ if (bindec($resposta) == 28) {
     echo ' <a href="./index.html"><div class="animalBotao"><button class="btn" style="background-color:#52565A; color :white;"><i class="fas fa-paw"></i> Voltar</button></div></a>';
    
     //PAPAGAIO
-} elseif (bindec($resposta) == 22) {
+} elseif (bindec($resposta) == 3) {
     echo '<div class="card"><p class="title"><img src="./assets/img/paraguaio.png" /></p></div>';
     echo ' <a href="./index.html"><div class="animalBotao"><button class="btn" style="background-color:#00C67F; color :white;"><i class="fas fa-paw"></i> Voltar</button></div></a>';
     
@@ -86,7 +81,6 @@ if (bindec($resposta) == 28) {
   
 }
 ?>
-
 
 </div>
 </section>
