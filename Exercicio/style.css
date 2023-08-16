@@ -22,6 +22,7 @@ html {
 
 h1 {
     font-family: 'Cherry Bomb One', cursive;
+    font-weight: lighter;
     font-size: 4rem;
     margin-bottom: 5rem;
     color: #0056b3;
@@ -203,7 +204,7 @@ button:hover {
     left: 0;
     width: 40px;
     height: 24px;
-    background-color: #2196F3;
+    background-color: #ff2233;
     border-radius: 34px;
     cursor: pointer;
     transition: background-color 0.3s;
